@@ -1,0 +1,140 @@
+body{
+    background-image: url('../assets/wooden.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'DigitalFont';
+    src: url('../assets/digital-7.ttf')
+}
+
+.calculadora{
+    height: 26rem;
+    width: 21rem;
+    background-color: rgb(155 155 155 / 0%);
+    backdrop-filter: blur(4px);
+    border-radius: 3rem;
+    border: 10px ridge #ffffff0a;
+    padding: 10px;
+}
+.calculadora.on{
+    box-shadow: inset 0px 1px 3px 0px #0d9ef28f;
+}
+
+.tela{
+    width: 90%;
+    height: 4rem;
+    background-color: #0f1212;
+    margin: auto;
+    border: 7px outset #f9f9f940;
+    box-shadow: inset 1px 1px 18px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 3.4rem;
+    font-family: 'DigitalFont';
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.tela::before{
+    content: '888888888';
+    color: #00000012;
+    position: absolute;
+}
+
+.teclas{
+    border-top: 2px solid #ffffff14;
+    margin-top: 15px;
+    padding: 20px 0px;
+    display: grid;
+    justify-content: center;
+}
+
+.row{
+    display: inline-flex;
+    margin-bottom:18px;
+    justify-content: space-between;
+}
+
+.tecla{
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    background: #ffffff00;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 8px outset #ffffff12;
+    color: #261410;
+    cursor: pointer;
+    margin-right: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.tecla.on{
+    text-shadow: 0px 0px 3px #03a9f4, 
+    -2px 2px 20px #03bcf4, 
+    -8px 3px 40px #03bcf4,
+     0 0 80px #03bcf4, 
+     0 0 160px #03bcf4, 
+     0 0 400px #03bcf4;
+     color:#fff;
+     background: #ffffff0d;
+}
+
+.btn-default, .btn-default.on{
+    height: 1rem;
+    font-size: 18px;
+    color: #e31313b3;
+}
+
+.btn-power{
+    color: #261410;
+}
+
+.btn-power.on{
+    color: #0ca5ffd4 !important;
+}
+
+.btn-equal{
+    color: #07144296 !important;
+}
+
+.row span:last-child{
+    margin-right: 0px !important;
+}
+
+.tecla.press{
+    color: #26141061 !important;
+    border: 8px solid #ffffff03 !important;
+    /* transition:0.5s; */
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+.pilhas{
+    position: absolute;
+    background-image: url(../assets/pilhas.png);
+    background-size: cover;
+    width: 75px;
+    height: 137px;
+    border: 3px ridge rgba(255, 255, 255, 0.333);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.4;
+}

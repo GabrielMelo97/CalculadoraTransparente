@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>CalculadoraJs</title>
+    </head>
+    <body>
+        <div class="calculadora">
+            <div class="tela">
+                <span class="value"></span>
+            </div>
+            <div class="teclas">
+                <div class="row">
+                    <span class="tecla noselect btn-clear btn-default">AC</span>
+                    <span class="tecla noselect btn-power btn-default"><i class="fas fa-power-off"></i></span></span>
+                </div>
+                <div class="row">
+                    <span class="tecla noselect" data-value="7">7</span>
+                    <span class="tecla noselect" data-value="8">8</span>
+                    <span class="tecla noselect" data-value="9">9</span>
+                    <span class="tecla noselect" data-value="/"><i class="fas fa-divide"></i></span>
+                </div>
+                <div class="row">
+                    <span class="tecla noselect" data-value="4">4</span>
+                    <span class="tecla noselect" data-value="5">5</span>
+                    <span class="tecla noselect" data-value="6">6</span>
+                    <span class="tecla noselect" data-value="*"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="row">
+                    <span class="tecla noselect" data-value="1">1</span>
+                    <span class="tecla noselect" data-value="2">2</span>
+                    <span class="tecla noselect" data-value="3">3</span>
+                    <span class="tecla noselect" data-value="-"><i class="fas fa-minus"></i></span>
+                </div>
+                <div class="row">
+                    <span class="tecla noselect" data-value="0">0</span>
+                    <span class="tecla noselect" data-value=".">.</span>
+                    <span class="tecla noselect" data-value="+"><i class="fas fa-plus"></i></span>
+                    <span class="tecla noselect btn-equal" data-value="="><i class="fas fa-equals"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="pilhas">
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</html>
