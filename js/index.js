@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    responsive();
+    pilhaResponsive();
 })
 
 $( window ).resize(function() {
-    responsive()
+    pilhaResponsive()
 });
 
 $(document).on("mousedown", ".tecla.on",function() {
@@ -49,7 +49,7 @@ function calcularResult(){
     result && $('.tela .value').html(result) 
 }
 
-function responsive(){
+function pilhaResponsive(){
     let calculadora = $('.calculadora').position();
     let pilhas = $('.pilhas');
     
